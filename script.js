@@ -146,14 +146,6 @@ function closeForm() {
 
 addBookToLibrary("Dune", "Frank Herbert", 412, false);
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, false);
-addBookToLibrary("Dune", "Frank Herbert", 412, false);
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, false);
-addBookToLibrary("Dune", "Frank Herbert", 412, false);
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, false);
-addBookToLibrary("Dune", "Frank Herbert", 412, false);
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, false);
-addBookToLibrary("Dune", "Frank Herbert", 412, false);
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, false);
 displayBooks();
 
 
