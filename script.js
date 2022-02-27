@@ -145,11 +145,27 @@ function closeForm() {
 }
 
 addBookToLibrary("Dune", "Frank Herbert", 412, false);
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, false);
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, "on");
 displayBooks();
 
 
 const addBtn = document.querySelector(".add-button");
 addBtn.addEventListener("click", function(){
     openForm();
+})
+
+const demoBtn = document.querySelector(".demo-button");
+demoBtn.addEventListener("click", function(){
+    myLibrary = [];
+    resetDisplay();
+    addBookToLibrary("The Hunger Games", "Suzanne Collins", 374, "on");
+    addBookToLibrary("Twilight", "Stephanie Meyer", 498, false);
+    addBookToLibrary("The Giving Tree", "Shel Silverstein", 64, "on");
+    addBookToLibrary("Green Eggs and Ham", "Dr. Seuss", 64, "on");
+    addBookToLibrary("The Da Vinci Code", "Dan Brown", 489, "on");
+    addBookToLibrary("Romeo and Juliet", "William Shakespeare", 281, false);
+    addBookToLibrary("Dracula", "Bram Stoker", 488, false);
+    addBookToLibrary("Dune", "Frank Herbert", 412, false);
+    addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, "on");
+    displayBooks();
 })

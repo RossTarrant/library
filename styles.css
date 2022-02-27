@@ -22,12 +22,11 @@ body{
     grid-template-rows: 1fr;
 }
 
-.add-button{
-    grid-column: 3/4;
+.add-button, .demo-button{
     background-color: white;
     font-size: 16px;
     width: max(25%, 70px);
-    height: max(45%, 40px);
+    height: 50px;
     border: 0px solid black;
     border-radius: 16px;
     position: relative;
