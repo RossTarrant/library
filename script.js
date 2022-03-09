@@ -1,6 +1,6 @@
 let myLibrary = [];
 
-function Book(title, author, pages, read){
+/* function Book(title, author, pages, read){
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -9,6 +9,22 @@ function Book(title, author, pages, read){
         let bookInfo = `${this.title} by ${this.author}, ${this.pages} pages.`;
         return bookInfo;
     }
+} */
+
+class Book{
+
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    info(){
+        let bookInfo = `${this.title} by ${this.author}, ${this.pages} pages.`;
+        return bookInfo;
+    }
+
 }
 
 function addBookToLibrary(title, author, pages, read) {
@@ -19,7 +35,7 @@ function addBookToLibrary(title, author, pages, read) {
   else{
       haveRead = false;
   }
-  newBook = new Book(title, author, pages, haveRead);
+  let newBook = new Book(title, author, pages, read);
   myLibrary.push(newBook);
 }
 
